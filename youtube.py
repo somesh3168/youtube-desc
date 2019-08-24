@@ -15,3 +15,8 @@ print(wks.range)
 
 #commit only 3
 #https://docs.google.com/spreadsheets/d/1A2C7qxAwT9xopYMWOqyUhBOHdIWRRHxak6-wmegAX_k/edit#gid=0
+
+# --- import the csv file to python -- make upload file option on the page
+# --- use pandas aas pd to scale
+# --- rearrange the data into TITLE, DESC... parts
+# --- 
