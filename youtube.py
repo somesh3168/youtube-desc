@@ -15,7 +15,7 @@ for i in range(1, x):
         print(desc)
 
 
-
+#simple is better than complex
 #1 - https://docs.google.com/spreadsheets/d/1A2C7qxAwT9xopYMWOqyUhBOHdIWRRHxak6-wmegAX_k/edit#gid=0
 #2 - https://docs.google.com/spreadsheet/ccc?key=0ArM5yzzCw9IZdEdLWlpHT1FCcUpYQ2RjWmZYWmNwbXc&output=csv
 
