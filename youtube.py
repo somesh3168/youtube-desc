@@ -1,20 +1,38 @@
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
+import pandas as pd
 
-scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
+data = pd.read_csv('test.csv', delimiter = ',',
+                   names = ['link','topic','chap','subject','class','hin','mb','title','tags','prev','next'])
+x = data.link[3]
+print(x)
+# import csv
+# filename = 'test.csv'
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('test.json', scope)
+# print(filename[6])
 
-client = gspread.authorize(credentials)
 
-wks = client.open('testSheet').sheet1
 
-#print(wks.get_all_records())
-print(wks.range)
-#export data from csv file and put desc into the YouTube Videos
+
+
+
+
+
+
+
+
+
+# with open(filename, 'r') as csvfile:
+#     csvreader = csv.reader(csvfile)
+
+#     fields = csvreader.next()
+
+#     for rows in csvreader:
+#         rows.append(row)
+
+#     print("Total no. of rows: %d"%(csvreader.line_num))    
 
 #commit only 3
-#https://docs.google.com/spreadsheets/d/1A2C7qxAwT9xopYMWOqyUhBOHdIWRRHxak6-wmegAX_k/edit#gid=0
+#1 - https://docs.google.com/spreadsheets/d/1A2C7qxAwT9xopYMWOqyUhBOHdIWRRHxak6-wmegAX_k/edit#gid=0
+#2 - https://docs.google.com/spreadsheet/ccc?key=0ArM5yzzCw9IZdEdLWlpHT1FCcUpYQ2RjWmZYWmNwbXc&output=csv
 
 # --- import the csv file to python -- make upload file option on the page
 # --- use pandas aas pd to scale
