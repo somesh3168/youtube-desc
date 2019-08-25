@@ -1,11 +1,18 @@
 import pandas as pd
 
 data = pd.read_csv('test.csv', delimiter = ',',
-                   names = ['link','topic','chap','subject','class','hin','mb','title','tags','prev','next'])
-x = data.link[3]
-print(x)
-# import csv
-# filename = 'test.csv'
+                   names = ['link','topic','chap','subject','clas','hin','mb','title','tags','prev','next'])
+print("Enter Youtube Link")
+input_link = input()
+x = len(data.link)
+print('Index no.',x)
+for i in range(1, x):
+    if input_link == data.link[i]:
+        print(data.title[i])
+        print('Desc\n')
+        desc = str(data.subject[i]) + '\n'+ str(data.chap[i])+ '\n'+ str(data.hin[i])+ '\n'+ str(data.mb[i])
+        print(desc)
+
 
 # print(filename[6])
 
